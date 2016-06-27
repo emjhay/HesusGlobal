@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/*
+
+Theme Name: X - Child Theme: Renew
+Theme URI: http://theme.co/x/
+Author: Themeco
+Author URI: http://theme.co/
+Description: Make all of your modifications to Renew in this child theme.
+Version: 1.0.0
+Template: x
+
+*/
+@import url("../x/framework/css/site/stacks/renew.css");
+/* -------------------------------------------------------------------------- *\
+	H1 - H6, p, a Site wide styles
+\* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: "GothamBold";
+  src: url("framework/fonts/gothamhtf-bold-webfont.eot");
+  src: local("☺"), url("framework/fonts/gothamhtf-bold-webfont.woff") format("woff"), url("framework/fonts/gothamhtf-bold-webfont.ttf") format("truetype"), url("framework/fonts/gothamhtf-bold-webfont.svg#webfonttr6bUXnh") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "GothamMedium";
+  src: url("framework/fonts/gothamhtf-medium-webfont.eot");
+  src: local("☺"), url("framework/fonts/gothamhtf-medium-webfont.woff") format("woff"), url("framework/fonts/gothamhtf-medium-webfont.ttf") format("truetype"), url("framework/fonts/gothamhtf-medium-webfont.svg#webfonttr6bUXnh") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "GothamBook";
+  src: url("framework/fonts/gothamhtf-book-webfont.eot");
+  src: local("☺"), url("framework/fonts/gothamhtf-book-webfont.woff") format("woff"), url("framework/fonts/gothamhtf-book-webfont.ttf") format("truetype"), url("framework/fonts/gothamhtf-book-webfont.svg#webfonttr6bUXnh") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "GothamLight";
+  src: url("framework/fonts/gothamhtf-light-webfont.eot");
+  src: local("☺"), url("framework/fonts/gothamhtf-light-webfont.woff") format("woff"), url("framework/fonts/gothamhtf-light-webfont.ttf") format("truetype"), url("framework/fonts/gothamhtf-light-webfont.svg#webfonttr6bUXnh") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*Type*/
+body {
+  font-family: 'GothamLight', "Helvetica Neue", Helvetica, sans-serif !important; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0px !important;
+  font-family: 'GothamBook', "Helvetica Neue", Helvetica, sans-serif !important; }
+
+strong, b {
+  font-family: 'GothamMedium', "Helvetica Neue", Helvetica, sans-serif !important; }
+
+.x-btn {
+  font-family: "GothamBook", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 0.1em; }
+
+.x-img-rounded,
+.x-img-rounded img {
+  border-radius: 4px;
+  width: 100%; }
+
+.x-img-circle,
+.x-img-circle img {
+  border-radius: 50%;
+  width: 100%; }
+
+.entry-thumb:hover:before {
+  display: none;
+  opacity: 0 !important; }
+
+input, select, textarea {
+  font-family: "GothamBook", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  letter-spacing: 0.1em; }
+
+select {
+  text-transform: uppercase; }
+
+.select-style {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  cursor: pointer; }
+  .select-style:after {
+    content: "\f078";
+    font-family: 'fontawesome';
+    position: absolute;
+    color: #0099c9;
+    right: 15rem;
+    top: 50%;
+    margin-top: -0.6em;
+    z-index: 4;
+    background: none; }
+  .select-style select {
+    border-radius: 0 !important;
+    -webkit-appearance: none;
+    position: relative;
+    -moz-appearance: window;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: none !important;
+    padding-right: 50rem;
+    margin: 0; }
+  .select-style.no-arrow:after {
+    content: ''; }
+
+.post-type-archive.post-type-archive-testimonials .entry-wrap {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+  .post-type-archive.post-type-archive-testimonials .entry-wrap:hover {
+    border-color: #30ceff; }
+    .post-type-archive.post-type-archive-testimonials .entry-wrap:hover h3 {
+      color: #0099c9; }
+  .post-type-archive.post-type-archive-testimonials .entry-wrap a.entry-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block; }
+
+.post-type-archive-wpfc_sermon .offset,
+.tax-wpfc_sermon_series .offset {
+  margin: 1em auto 2em; }
+
+#wpfc_sermon_sorting {
+  text-align: center;
+  margin-bottom: 0.75em; }
+
+.entry-wrap {
+  text-align: center; }
+
+.tax-wpfc_sermon_series .wpfc_sermon_image {
+  display: inline-block;
+  margin-bottom: 50px; }
+.tax-wpfc_sermon_series .page-title {
+  font-size: 350%;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8; }
+  .tax-wpfc_sermon_series .page-title span {
+    color: #0099c9;
+    text-transform: uppercase;
+    font-size: 25%;
+    letter-spacing: 0.2em;
+    display: block;
+    line-height: 0.5em; }
+.tax-wpfc_sermon_series .sermon-tax-description {
+  text-align: center;
+  margin-bottom: 1.6em; }
+
+.x-iso-container .entry-featured {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 10px; }
+.x-iso-container .entry-content {
+  margin: 0; }
+  .x-iso-container .entry-content h3 {
+    font-size: 140%; }
+  .x-iso-container .entry-content p {
+    font-size: 90%; }
+  .x-iso-container .entry-content .wpfc_sermon-audio {
+    margin: 20px 0 0; }
+    .x-iso-container .entry-content .wpfc_sermon-audio .x-audio {
+      margin: 0; }
+.x-iso-container .entry-meta {
+  text-transform: uppercase;
+  font-size: 10px; }
+  .x-iso-container .entry-meta span {
+    display: block; }
+
+.x-container-fluid {
+  margin: 0 auto;
+  width: 74%;
+  max-width: 1200px; }
+
+.single.single-testimonials .entry-header {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8; }
+  .single.single-testimonials .entry-header .entry-title {
+    font-size: 300%; }
+  .single.single-testimonials .entry-header .entry-meta {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #0099c9; }
+.single .wpfc_sermon_wrap {
+  margin: 1.5em 0; }
+.single .sermon_topics {
+  margin: 1em 0; }
+.single .navigation {
+  display: block;
+  margin-top: 2em;
+  padding-top: 2em;
+  letter-spacing: 0.1em;
+  font-size: 75%;
+  text-transform: uppercase;
+  border-top: 1px solid #d8d8d8; }
+  .single .navigation .nav-previous {
+    float: left;
+    width: auto; }
+  .single .navigation .nav-next {
+    float: right;
+    width: auto; }
+.single .bibly_popup_outer {
+  font-size: 12px; }
+
+.type-event h1 {
+  font-size: 350%; }
+.type-event .x-container.offset {
+  margin-top: 0; }
+
+@media only screen and (max-width: 1290px) {
+  .x-nav-wrap.desktop {
+    display: none; } }
+
+.masthead-inline .x-btn-navbar {
+  display: block;
+  float: right;
+  margin-left: 25px; }
+
+@media only screen and (max-width: 1290px) {
+  .x-navbar .desktop .x-nav li a {
+    padding: 0.575em; } }
+
+.x-btn-widgetbar {
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  color: #0099c9;
+  border: none; }
+  .x-btn-widgetbar:hover {
+    color: #30ceff; }
+
+@media only screen and (max-width: 568px) {
+  .x-brand img {
+    max-width: 200px; } }
+
+.x-btn-widgetbar i {
+  top: 15px;
+  right: 25px;
+  position: fixed; }
+
+.x-widgetbar-inner {
+  padding: 0; }
+
+.x-row-fluid .x-span4 {
+  width: 29.06404%;
+  float: left;
+  margin-left: 6.40394%;
+  margin-bottom: 2%; }
+  @media only screen and (max-width: 768px) {
+    .x-row-fluid .x-span4 {
+      width: 100%;
+      margin-left: 0; } }
+
+.x-row-fluid [class*="span"]:first-child {
+  margin-left: 0; }
+
+body {
+  background-color: #0099c9 !important; }
+
+.single-post .site > .x-container-fluid {
+  width: 100%;
+  max-width: none; }
+
+.x-comments-area {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.single-post .x-header-landmark {
+  display: none; }
+
+.x-btn.x-btn-large {
+  padding: 0.579em 1.105em; }
+
+.x-navbar .desktop .x-nav > li > a > span {
+  display: block;
+  padding-top: 12px; }
+
+.x-navbar {
+  background: white;
+  opacity: 0.9; }
+
+/*Recent Posts*/
+.x-recent-posts {
+  margin: 0 !important; }
+
+.x-recent-posts .x-recent-posts-img {
+  padding-bottom: 0;
+  /*min-height: 208px;*/ }
+
+/*Visual Composer*/
+.x-content-band {
+  padding: 60px 0;
+  margin: 0; }
+
+.x-content-band .x-content-band {
+  padding: 10px 0;
+  margin: 0; }
+
+.x-content-band .x-content-band:last-of-type {
+  padding-bottom: 0; }
+
+.x-content-band.bg-image h1,
+.x-content-band.bg-image h2,
+.x-content-band.bg-image h3,
+.x-content-band.bg-image h4,
+.x-content-band.bg-image h5,
+.x-content-band.bg-image h6,
+.x-content-band.bg-image p,
+.x-content-band.bg-image a {
+  color: #f2f2f2 !important;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+
+.x-content-band.bg-image .x-btn {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.x-content-band.dark-bg {
+  background-color: #191919 !important; }
+
+.x-content-band.dark-bg,
+.x-content-band.dark-bg h1,
+.x-content-band.dark-bg h2,
+.x-content-band.dark-bg h3,
+.x-content-band.dark-bg h4,
+.x-content-band.dark-bg h5,
+.x-content-band.dark-bg h6,
+.x-content-band.dark-bg p,
+.x-content-band.dark-bg a {
+  color: #f2f2f2 !important; }
+
+.x-content-band.blue-bg {
+  background-color: #0099c9 !important; }
+
+.x-content-band.blue-bg .x-btn {
+  border-color: #f2f2f2 !important; }
+
+.x-content-band.blue-bg .x-btn:hover {
+  border-color: #ffffff !important;
+  color: #ffffff !important; }
+
+.x-content-band.blue-bg,
+.x-content-band.blue-bg h1,
+.x-content-band.blue-bg h2,
+.x-content-band.blue-bg h3,
+.x-content-band.blue-bg h4,
+.x-content-band.blue-bg h5,
+.x-content-band.blue-bg h6,
+.x-content-band.blue-bg p,
+.x-content-band.blue-bg a {
+  color: #f2f2f2 !important; }
+
+.x-recent-posts {
+  text-align: center; }
+
+.x-recent-posts a {
+  float: none;
+  display: inline-block; }
+
+.x-recent-posts a:hover img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.2; }
+
+/*footer*/
+footer {
+  background-color: #0099c9 !important; }
+  footer.x-colophon {
+    padding: 0 !important; }
+  footer.x-colophon .widget ul {
+    text-align: center; }
+  footer.x-colophon .widget ul li {
+    background: transparent !important;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    font-size: 16px; }
+  footer.x-colophon.bottom div {
+    margin: 0 auto;
+    padding: 1px 0; }
+  footer.x-colophon .widget ul li a {
+    color: #ffffff;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase; }
+  footer.x-colophon .widget ul li a:hover {
+    color: #ffffff;
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */
